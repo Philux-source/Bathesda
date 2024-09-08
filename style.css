@@ -12,6 +12,9 @@ body{
     background: #C45050!important;
 }
 
+a:hover{
+    color: #e19d9d!important;
+}
 
 .icon{
     margin-right: 15px;
@@ -21,6 +24,10 @@ body{
 .live-stream{
     background-color: #C45050;
     color: white;
+}
+
+.form-control{
+    padding: 15px 10px!important;
 }
 
 
@@ -300,6 +307,8 @@ body{
 
 #footer{
     min-height: 50vh;
+    background-color: #232323;
+    color: #fff;
 }
 
 
