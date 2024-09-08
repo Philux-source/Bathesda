@@ -4,33 +4,73 @@ body{
     margin-left: 0px;
     margin-right: 0px;
 }
+
+.text-primary{
+    color: #C45050!important;
+}
+.bg-primary{
+    background: #C45050!important;
+}
+
+
 .icon{
     margin-right: 15px;
 }
 
-.car-container{
-    position: relative;
-}
 
 .live-stream{
-    background-color: #737373;
+    background-color: #C45050;
     color: white;
 }
 
-.c-item{
-    height: 480px;
+
+#carousel {
+    position: relative;
+    height: 98vh; /* Ensures the carousel covers 75% of the viewport height */
+    overflow: hidden;
 }
 
-.c-img{
+.carousel-inner {
     height: 100%;
-    object-fit: cover;
+}
+
+.c-item img.c-img {
+    height: 98vh;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
     filter: brightness(0.7);
 }
+
+.carousel-caption {
+    text-align: center;
+    color: #fff; /* Ensure the text stands out */
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Same text shadow for consistency */
+}
+
+
+
 .carousel-button{
     border: 1px solid white;
+    background-color: transparent; 
+    transition: background-color 0.3s ease;
     border-radius: 30px;
     color: white;
+    padding: 1rem 3rem;
 }
+
+
+.carousel-button:hover {
+    background-color: #C45050;
+}
+
 
 .flex-container{
     background-color: #737373;
@@ -40,12 +80,37 @@ body{
     background-image: url(/images/carousel-footer-blurr.png);
 }
 
+#overlaying-section{
+    position: absolute;
+    bottom: 0;
+
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    pointer-events: none; /* Ensures the overlay doesn't interfere with interactions */
+}
+
+
 .the-buttons{
     background-color: white;
+    border: none;
     color: #C45050;
-    height: 60px;
-    width: 200px;
+   padding: 1rem 3rem;
+   margin: .2rem 0rem;
+   min-width: 20rem;
+   font-weight: 600;
+   display: flex;
+   justify-content: center;
+    border-radius: 10px;
+
 }
+
 .span-btn{
     text-align: center;
 }
@@ -61,16 +126,13 @@ body{
     color: #C45050;
 }
 
-.box{
-    position: absolute;
-    left: 10%;
-    width: 80%;
-    text-align: center;
-    background: #E1EBF4;
-    padding: 40px;
-    border-radius: 20px;
-    opacity: 0.9;
+.sermon-thumbnails{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
+
+
 
 .input{
     font-size: 18px;
@@ -91,27 +153,53 @@ body{
     padding: 15px 20px;
     background: #C45050;
 }
+
 .sub-container{
-    background-image: url(/images/4.png);
+    background-image: url(./images/4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 400px;
+    min-height: 70vh;
+    background-attachment: fixed;
     
 }
+
+.box{
+    text-align: center;
+    background-color: rgba(225, 235, 244, 0.2); /* Equivalent to #E1EBF433 */
+    backdrop-filter: blur(20px); /* Apply a blur effect */
+    -webkit-backdrop-filter: blur(10px); 
+    padding: 40px;
+    border-radius: 20px;
+    color: #fff;
+}
+
 .about-bishop{
     text-align: justify;
 }
 
+.vh-80{
+    min-height: 80vh;
+}
+
+
+
+#sermons{
+    background-color: #fff;
+    min-height: 75vh;
+}
+
 .img-ministry{
-    width: 300px;
-    height: 240px;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .ministry-cat{
-    font-size: 14px;
-    color: #C45050;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ffffff;
 }
 
 .p-ministry{
@@ -120,7 +208,7 @@ body{
 }
 
 .ministry-title{
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .form{
@@ -133,30 +221,27 @@ body{
 }
 
 .sermon-header{
-    margin-left: 12px;
-    padding-left: 10px;
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .sermon-p{
-    margin-left: 15px;
-    padding-left: 15px;
     font-size: 14px;
     margin-top: 0px;
+    color: #fff;
+    font-weight: bolder;
 }
 
 .event-calender{
     border-radius: 0 15px 15px 15px;
-    min-height: 300px;
-    width: 300px;
+    margin: 2px;
     position: relative;
-    margin-right: 15px;
 }
 
 .event-calender-img{
     width: 100%; 
-    height: 180px;
+    height: auto;
     border-radius: 0 15px 0 0;
 }
 
@@ -166,6 +251,9 @@ body{
     top: 0px;
     height: 40px;
     width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .design-background{
@@ -193,5 +281,51 @@ body{
     color: #C45050;
 }
 
+.contact-form{
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    /* width: 100%; */
+    padding: 2rem; 
+
+}
+
+.contact-form .card{
+    border-radius: 13px;
+}
+
+.contact-form label{
+    font-weight: 700;
+}
+
+#footer{
+    min-height: 50vh;
+}
+
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 200;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-container {
+    max-width: 80%; /* Restricts the width of the navbar to make it more centralized */
+    margin: 0 auto; /* Centers the navbar horizontally */
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: center; /* Center the ul within the navbar */
+}
+
+.navbar .nav-link {
+    padding: 15px 30px; /* Increase padding inside each nav-link for a larger appearance */
+    font-size: 18px; /* Adjust the font size */
+}
 
 
