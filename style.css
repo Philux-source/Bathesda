@@ -93,11 +93,12 @@ a:hover{
 
 }
 
+/*Attend to this -->*/
 #overlaying-section-mobile{
     min-height: 50vh;
     display: flex;
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .gradient-overlay {
@@ -364,3 +365,12 @@ box-shadow: none;
         border-radius: 0 15px 0 0;
   }
   }
+
+
+a{
+    text-decoration: none;
+}
+
+.bg-body-orange{
+    background: #FFF6ED;
+}
