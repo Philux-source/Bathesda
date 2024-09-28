@@ -87,6 +87,9 @@ a:hover{
     background-image: url(/images/carousel-footer-blurr.png);
 }
 
+
+
+
 #overlaying-section{
     position: absolute;
     bottom: 0;
@@ -131,6 +134,15 @@ a:hover{
     border: none;
     color: #fff;
 
+}
+.a_btn{
+    text-decoration: none;
+    color: #C45050;
+}
+
+.a_custom{
+    text-decoration: none;
+    color: #737373;
 }
 
 .span-btn{
@@ -189,6 +201,33 @@ box-shadow: none;
     background-attachment: fixed;
     
 }
+
+.custom-hero{
+    background-image: url(./images/4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 75vh;
+    /* width: 75vh; */
+    text-align: center;
+    /* align-items: center; */
+    
+}
+
+.custom-hero h1{
+    padding-top: 18%;
+    /* margin-left: 40%; */
+    color: white;
+    font-weight: bold;
+    
+}
+
+@media (max-width: 760px) {
+    .custom-hero{
+        padding-top: 40%;
+    }
+  }
 
 .box{
     text-align: center;
@@ -373,4 +412,12 @@ a{
 
 .bg-body-orange{
     background: #FFF6ED;
+}
+
+.feature{
+    position: relative;
+}
+.purchase_audio{
+    position: absolute;
+    bottom: 30%;
 }
